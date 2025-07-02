@@ -5,15 +5,13 @@ on:
     paths:
       - student_note.md
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Print repo name
-        run: echo "repository: ${{ github.repository }}"
+        run: echo "Repository: ${{ github.repository }}"
 
-      - name: print username
-        run: echo "name: ${{ github.username }}"
-
+      - name: Print username
+        run: echo "Triggered by: ${{ github.actor }}"
