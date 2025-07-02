@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - uses: actions/checkout@v4
 
       - name: Print repo name
-        run: echo "Repository: ${{ github.repository }}"
+        run: echo "Repository ${{ github.repository }}"
 
       - name: Print username
-        run: echo "Triggered by: ${{ github.actor }}"
+        run: echo "Triggered by ${{ github.actor }}"
