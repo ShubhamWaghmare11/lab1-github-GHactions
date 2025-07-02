@@ -1,4 +1,4 @@
-name: assignment1-workflow
+name: assignment1-workflow.
 
 on:
   push:
